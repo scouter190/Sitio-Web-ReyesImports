@@ -1,0 +1,123 @@
+/*CATEGORÍAS*/
+main{
+    overflow-x: hidden;
+    
+}
+.titulo {
+    margin-top: 0px;
+    text-align: center;
+    background: black;
+    color: white;
+    letter-spacing: 30px;
+    padding: 40px 20px;
+}
+.portada{
+    overflow: hidden;
+}
+.portada img{
+    width: 100%;
+    transition: all .5s;
+}
+.portada img:hover{
+    transform: scale(1.05);
+}
+
+/*CATEGORÍA HOMBRE-VÍDEO*/
+video{
+    width: 100%;
+    height: 500px;
+}
+
+
+/*ITEMS*/
+
+.resultados{
+    margin: 40px;
+    border-bottom: 5px solid black;
+    padding: 15px ;
+}
+
+.contenedor_items{
+    /*responsive=grid*/
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    margin-top: 20px;
+    margin: auto;
+    width: 80%;
+
+}
+
+.item img{
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    float:left;
+    border-radius: 30px;
+    transition: all .5s;
+}
+
+.item{
+    border-radius: 10px;
+    transition: all .3s;
+   
+}
+article .item {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0,  0.2);
+    background-color: rgb(17, 15, 15);
+}
+.item figure{
+    overflow: hidden; /*Hace que no se desborde fuera del espacio*/
+}
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info_product{
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+h5, .precio{
+    color: gray;
+}
+h3{
+    transition: all .3s;
+}
+.item:hover h3{
+    color: aliceblue;
+}
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.info_product button{
+    border: none;
+    background: none;
+    background-color: #000000;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+    margin-bottom: auto;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .4s;
+}
+.item:hover button{
+    background-color: #e40303;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 740px){
+    .titulo{
+        letter-spacing: 10px;
+    }
+}

@@ -1,0 +1,234 @@
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.logo img{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*FOOTER*/
+
+footer{
+    background-color: rgb(228, 32, 32);
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-size: 0.88rem;
+}
+.pie_pag{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    padding-bottom: 20px;
+}
+.pie_pag h3, p, a{
+    color:rgba(245, 245, 245, 0.863);
+}
+.pie_pag a{
+    transition: all .3s;
+    text-decoration: none;
+}
+.pie_pag a:hover{
+    color: #000000;
+}
+
+.redes img{
+    width: 30px;
+    margin-right: 10px;
+    margin-top: -15px;
+    background-color: rgba(245, 222, 179, 0.692);
+    filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(340deg) brightness(110%) contrast(110%); /*css filter-> para cambiar color al ícono*/
+    padding: 5px;
+    border-radius: 5px;
+}
+.redes img:hover{
+    background-color: rgba(255, 247, 247, 0.795);
+
+}
+.redes{
+    display: flex;
+}
+
+.pie_pag{
+    text-align: left;
+}
+.columna_1{
+    margin-left: 10px;
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    border-left: none;
+    transition: all .2s;
+
+}
+.columna_1:hover{
+   
+    border-left: 3px solid rgb(226, 217, 217);;
+    border-radius: 3px;
+}
+
+.columna_2{
+    margin-left: 10px;
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    border-left: none;
+    transition: all .2s;
+
+}
+.columna_2:hover{
+   
+    border-left: 3px solid rgb(226, 217, 217);
+    border-radius: 3px;
+}
+
+.contactanos{
+    margin-top: 30px;
+}
+.contactanos h3{
+    margin-bottom: 20px;
+}
+
+.columna_1 a{
+    display: block;
+    margin-top: 25px;
+}
+.columna_1 h3{
+    margin-bottom: 20px;
+}
+.columna_2 h3{
+    margin-bottom: 20px;
+}
+.columna_2 a{
+    display: block;
+    margin-top: 25px;
+}
+.copy{ /*agregar altura par que funcione el centrado*/
+    background-color:  rgb(199, 34, 34);
+    height: 60px;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.copy h5, strong{
+    color:#f5f5f5;
+    font-size: x-small;
+}
+
+.mapa iframe{
+    width: 80%;
+    height: 100px;
+}
+.ubicacion h3{
+    margin-bottom: 20px;
+}
+.ubicacion p{
+    margin-bottom: 20px;
+}
+.ubicacion{
+    margin-left: 10px;
+    width: 80%;
+    height: 250px;
+    padding: 20px;
+    border-left: none;
+    transition: all .2s;
+
+}
+.ubicacion:hover{
+    border-left: 3px solid rgb(226, 217, 217);
+    border-radius: 3px;
+}
+
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 1100px){
+    
+    .columna_1{
+        height: 250px;
+    }
+    .columna_2{
+        height: 270px;
+    }
+    .ubicacion{
+        height: 250px;
+    }
+    .contactanos {
+        margin-top: 10px;
+    }
+    .contactanos h3{
+        margin-bottom: 10px;
+    }
+    .columna_1 a{
+        margin-top:10px;
+    }
+    .columna_1 h3{
+        margin-bottom: 10px;
+    }
+    .columna_2 h3{
+        margin-bottom: 10px;
+    }
+    .columna_2 a{
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width:675px) {
+   
+    .pie_pag {
+        display: block;
+        font-size: small;
+        margin-left: 20px;
+    } 
+    .redes{
+        display: flex;
+    }
+    .mapa iframe{
+        width: 100%;
+        padding: 0;
+    }
+    .columna_1{
+        height: 280px;
+    }
+    .columna_2{
+        height: 300px;
+    }
+    .ubicacion{
+        height: 200px;
+    }
+    .contactanos {
+        margin-top: 20px;
+    }
+    .contactanos h3{
+        margin-bottom: 20px;
+    }
+    .columna_1 a{
+        margin-top:25px;
+    }
+    .columna_1 h3{
+        margin-bottom: 20px;
+    }
+    .columna_2 h3{
+        margin-bottom: 20px;
+    }
+    .columna_2 a{
+        margin-top: 25px;
+    }
+    
+}
+
+/*
+object-fit: cover;    <--- para recortar la imagen y cubra proporcionalmente el espacio.
+*/
+

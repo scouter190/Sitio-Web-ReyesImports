@@ -1,0 +1,271 @@
+main {
+    font-family: "Reboto", "sans serif";
+    overflow-x: hidden;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titulo_marca {
+    width: 100%;
+    padding: 60px;
+    font-size: 60px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.contenedor_superior_Reebok {
+    width: 100%;
+    height: 500px;
+    background-image: url(../imgs/Reebok/portada.webp);
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /*esconder a las burbujas*/
+}
+.contenedor_superior_Adidas {
+    width: 100%;
+    height: 500px;
+    /* background:rgb(182, 56, 56);*/
+    background-image: url(../imgs/Adidas/adidas_fondo.webp);
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /*esconder a las burbujas*/
+}
+.subtitulo{
+    color: #0c0b0b;
+}
+.contenedor_superior_Puma {
+    width: 100%;
+    height: 550px;
+    /* background:rgb(182, 56, 56);*/
+    background-image: url(../imgs/Puma/puma_fondo.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /*esconder a las burbujas*/
+}
+.contenedor_superior_Nike {
+    width: 100%;
+    height: 500px;
+    /* background:rgb(182, 56, 56);*/
+    background-image: url(../imgs/Nike/nike_fondo.webp);
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /*esconder a las burbujas*/
+}
+
+.banner_contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.banner_title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner_title h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.banner_title .clic {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1a2849;
+    padding: 20px;
+}
+
+
+/* Burbujas */
+
+.burbuja {
+    border-radius: 50%;
+    background: rgb(108, 119, 133);
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8) {
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+
+/* Main */
+.container-items {
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    margin: auto;
+    margin-top: 20px;
+}
+
+.item {
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(17, 15, 15);
+}
+
+
+.item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-product p {
+    color: gray;
+}
+
+h2 {
+    transition: all .3s;
+}
+
+.item:hover h2 {
+    color: aliceblue;
+}
+
+.info-product button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.item:hover button {
+    background-color: #e40303;
+    font-weight: bolder;
+    border-radius: 10px;
+}
